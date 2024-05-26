@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page de Connexion</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="connexion.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form action="php/inscription.php" method="post">
+                <h1>Créer un Compte</h1>
+                <span>Utilisez votre e-mail pour vous inscrire</span>
+                <input type="text" name="username" placeholder="Nom">
+                <input type="email" name="email" placeholder="E-mail">
+                <input type="password" name="password" placeholder="Mot de passe">
+                <button type="submit" name="signup">S'inscrire</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form action="php/connexion.php" method="post">
+                <h1>Se Connecter</h1>
+                <br>
+                <span>Utilisez votre Nom et votre mot de passe</span>
+                <input type="text" name="username" placeholder="Nom">
+                <input type="password" name="password" placeholder="Mot de passe">
+                <br>
+                <button type="submit" name="login">Se Connecter</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>De Retour!</h1>
+                    <p>Inscrivez-vous avec vos coordonnées personnelles pour voire touts les résultats de vos scans.</p>	
+                    <button class="hidden" id="login">Se Connecter</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Inscription</h1>
+                    <p>Inscrivez-vous avec vos coordonnées personnelles pour voire touts les résultats de vos scans.
+                    </p>
+                    <button class="hidden" id="register">S'inscrire</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
